@@ -19,9 +19,10 @@ function init(){
 function getData() {
     var zip = document.getElementById('zip').value;
     var url =  'http://wsf.cdyne.com/WeatherWS/Weather.asmx/GetCityWeatherByZIP?ZIP=';
+        url += zip;
 
     xmlhttp.open('GET', url, true);
-    xmlhttp.sennd
+    xmlhttp.send
 }
 
 function processResult() {
